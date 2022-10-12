@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+- name: hubspot
+  description: Hubspot data holding Biztory customer data
+  database: biztory_demo
+  schema: datajam_2022
+  tables:
+  - name: company
+    identifier: hubspot_company
+    description: List of customers for Biztory
+  - name: deal
+    identifier: hubspot_deal
+    description: List of deals in place
+  - name: deal_company
+    identifier: hubspot_deal_company
+    description: Linking tables between deals and companies
+  - name: line_item
+    identifier: hubspot_line_item
+    description: Breakdown of what is in the deal
+  - name: owner
+    identifier: hubspot_owner
+    description: Who is the owner of the client
